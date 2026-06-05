@@ -348,7 +348,7 @@ const MainContent = () => {
                                                 style={{
                                                   backgroundColor:
                                                     "rgb(255, 178, 0)",
-                                                  color: "rgb(54, 38, 178)",
+                                                  color: "rgb(139, 6, 19)",
                                                 }}
                                               >
                                                 <i className="bi bi-check-lg"></i>
@@ -356,7 +356,7 @@ const MainContent = () => {
                                               <span
                                                 className="list-text"
                                                 style={{
-                                                  color: "rgb(0, 180, 216)",
+                                                  color: "rgb(215, 25, 32)",
                                                 }}
                                               >
                                                 Học chuyên đề HCM202
@@ -370,7 +370,7 @@ const MainContent = () => {
                                                 style={{
                                                   backgroundColor:
                                                     "rgb(255, 178, 0)",
-                                                  color: "rgb(54, 38, 178)",
+                                                  color: "rgb(139, 6, 19)",
                                                 }}
                                               >
                                                 <i className="bi bi-check-lg"></i>
@@ -378,7 +378,7 @@ const MainContent = () => {
                                               <span
                                                 className="list-text"
                                                 style={{
-                                                  color: "rgb(0, 164, 197)",
+                                                  color: "rgb(215, 25, 32)",
                                                 }}
                                               >
                                                 Luyện tập trắc nghiệm HCM202
@@ -461,7 +461,7 @@ const MainContent = () => {
                                       >
                                         <span
                                           className="headingtext fwglobal nline0"
-                                          style={{ color: "#00B4D8" }}
+                                          style={{ color: "#d71920" }}
                                         >
                                           “Không có gì quý hơn độc lập, tự do.”
                                           - Chủ tịch Hồ Chí Minh
@@ -524,7 +524,7 @@ const MainContent = () => {
                                           }}
                                         >
                                           <div
-                                            className="theme-text-inner align-none text-rgb(0, 180, 216) rounded0 gradient0 light"
+                                            className="theme-text-inner align-none text-hcm-red rounded0 gradient0 light"
                                             style={{
                                               "--mb2-pb-graddeg": "180deg",
                                             }}
@@ -532,7 +532,7 @@ const MainContent = () => {
                                             <div
                                               className="theme-text-text upper0 fwbold lhglobal"
                                               style={{
-                                                color: "rgb(0, 180, 216)",
+                                                color: "rgb(215, 25, 32)",
                                                 fontSize: "1rem",
                                               }}
                                             >
@@ -561,7 +561,7 @@ const MainContent = () => {
                                         >
                                           <span
                                             className="headingtext fwglobal nline0"
-                                            style={{ color: "#00B4D8" }}
+                                            style={{ color: "#d71920" }}
                                           >
                                             Học thông qua các trò chơi thú vị
                                           </span>
@@ -655,9 +655,9 @@ const MainContent = () => {
                                                             to="/quiz"
                                                             style={{
                                                               "--mb2-pb-btn-bgcolor":
-                                                                "rgb(0, 180, 216)",
+                                                                "rgb(215, 25, 32)",
                                                               "--mb2-pb-btn-bghcolor":
-                                                                "rgb(0, 167, 203)",
+                                                                "rgb(139, 6, 19)",
                                                             }}
                                                           >
                                                             Bắt đầu ôn tập
@@ -736,9 +736,9 @@ const MainContent = () => {
                                                             to="/flip"
                                                             style={{
                                                               "--mb2-pb-btn-bgcolor":
-                                                                "rgb(54, 38, 178)",
+                                                                "rgb(215, 25, 32)",
                                                               "--mb2-pb-btn-bghcolor":
-                                                                "rgb(41, 25, 165)",
+                                                                "rgb(139, 6, 19)",
                                                             }}
                                                           >
                                                             Chơi thẻ nhớ

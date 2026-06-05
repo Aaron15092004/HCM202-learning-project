@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import $ from "jquery";
 import "../styles/flip/flip.css";
-import { Link } from "react-router-dom";
 import { flipImages } from "../data/flipImagesData";
+import BackHomeButton from "../components/common/BackHomeButton";
 
 export default function FlipCardPage() {
   useEffect(() => {
@@ -323,10 +323,7 @@ export default function FlipCardPage() {
         <div className="game-intro-wrapper">
           <div className="common-header">
             <div className="common-logo">
-              <Link to="/" className="back-home-btn">
-                <i className="bi bi-house-door-fill"></i>
-                <span className="back-text">Trang chủ</span>
-              </Link>
+              <BackHomeButton />
             </div>
           </div>
           <div className="game-header">

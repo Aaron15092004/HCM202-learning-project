@@ -1,4 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
+import BackHomeButton from "../components/common/BackHomeButton";
 
 const styles = `
   .results-wrapper {
@@ -7,6 +8,7 @@ const styles = `
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    background: var(--hcm-gradient-soft);
   }
 
   .result-card {
@@ -16,15 +18,16 @@ const styles = `
   padding-left: 5rem;
   max-width: 600px;
   border: 5px solid;
-  border-image: linear-gradient(to right, #3626B2, #00B4D8) 1;
+  border-image: linear-gradient(to right, var(--hcm-red-dark), var(--hcm-gold)) 1;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   animation: slideUp 0.5s ease-out;
+  color: var(--hcm-ink);
 }
 
 .score-display {
   font-size: 5rem;
   font-weight: 800;
-  background: linear-gradient(to right, #3626B2, #00B4D8);
+  background: var(--hcm-gradient-gold);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 1rem 0;
@@ -44,7 +47,7 @@ const styles = `
   .result-title {
     font-size: 2.5rem;
     font-weight: 700;
-    background: linear-gradient(to right, #3626B2, #00B4D8);
+    background: var(--hcm-gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 2rem;
@@ -56,7 +59,7 @@ const styles = `
     font-weight: 600;
     padding: 0.5rem 2rem;
     border-radius: 50px;
-    background: linear-gradient(to right, #3626B2, #00B4D8);
+    background: var(--hcm-gradient-primary);
     color: white;
     margin: 1rem 0;
   }
@@ -95,28 +98,29 @@ const styles = `
   }
 
   .result-btn.primary {
-    background: linear-gradient(to right, #00B4D8, #3626B2);
+    background: var(--hcm-gradient-primary);
     color: white;
   }
 
   .result-btn.primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(44, 74, 227, 0.4);
+    box-shadow: 0 10px 30px var(--hcm-shadow);
   }
 
   .result-btn.secondary {
-    background: #000;
-    color: white;
+    background: var(--hcm-gold);
+    color: var(--hcm-red-dark);
   }
 
   .result-btn.secondary:hover {
-    background: #333;
+    background: var(--hcm-gold-strong);
     transform: translateY(-3px);
   }
 
   @media (max-width: 768px) {
     .result-card {
       padding: 2rem;
+      width: min(100%, 560px);
     }
 
     .result-title {
@@ -188,13 +192,7 @@ const QuizResultsPage = () => {
               <i className="bi bi-arrow-clockwise me-2"></i>
               Ôn lại
             </button>
-            <button
-              className="result-btn secondary"
-              onClick={() => navigate("/")}
-            >
-              <i className="bi bi-house-door me-2"></i>
-              Trang chủ
-            </button>
+            <BackHomeButton className="result-btn secondary" variant="inline" />
           </div>
         </div>
       </div>

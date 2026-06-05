@@ -13,6 +13,7 @@ import {
 } from "../utils/tuviCalculations";
 import "../styles/tuvi/TuviPage.css";
 import { createGeminiService } from "../services/geminiService";
+import BackHomeButton from "../components/common/BackHomeButton";
 
 const TuviPage = () => {
   const [formData, setFormData] = useState({
@@ -60,8 +61,8 @@ const TuviPage = () => {
         minWidth: 200.0,
         scale: 1.0,
         scaleMobile: 1.0,
-        color: 0x3f51b5,
-        backgroundColor: 0x23153c,
+        color: 0xffcc33,
+        backgroundColor: 0x5f0310,
         points: 10.0,
         maxDistance: 20.0,
         spacing: 15.0,
@@ -455,11 +456,7 @@ Lưu ý:
     <div className="tuvi-container-wrapper" ref={vantaRef}>
       <div className="masthead">
         <div className="container-2">
-          <Link to="/">
-            <button className="back-home">
-              <span className="text">Back Home</span>
-            </button>
-          </Link>
+          <BackHomeButton variant="floating" />
           <h1 className="wordmark">Mời bạn Lập lá số tử vi</h1>
           <div className="formborder">
             <form id="lstv" onSubmit={(e) => e.preventDefault()}>
@@ -765,7 +762,7 @@ Lưu ý:
             <div
               className="text-white p-4"
               style={{
-                background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                background: "linear-gradient(135deg, #d71920 0%, #8b0613 100%)",
                 border: "none",
                 borderRadius: "25px",
                 padding: "12px 40px",
@@ -773,9 +770,9 @@ Lưu ý:
                 fontWeight: "600",
                 boxShadow: `
             0 0 10px rgba(255, 255, 255, 0.6),
-            0 0 25px rgba(120, 150, 255, 0.8),
-            0 0 50px rgb(120, 150, 255),
-            0 0 80px rgb(120, 150, 255)
+            0 0 25px rgba(255, 204, 51, 0.72),
+            0 0 50px rgba(255, 204, 51, 0.48),
+            0 0 80px rgba(255, 204, 51, 0.48)
           `,
                 color: "#fff",
                 textShadow: "0 0 10px rgba(255, 255, 255, 0.8)",
@@ -801,9 +798,9 @@ Lưu ý:
                       color: "#fff",
                       textShadow: `
           0 0 10px rgba(255, 255, 255, 0.6),
-          0 0 25px rgba(120, 150, 255, 0.8),
-          0 0 50px rgb(120, 150, 255),
-          0 0 80px rgb(120, 150, 255)
+          0 0 25px rgba(255, 204, 51, 0.72),
+          0 0 50px rgba(255, 204, 51, 0.48),
+          0 0 80px rgba(255, 204, 51, 0.48)
         `,
                     }}
                   >
@@ -815,7 +812,7 @@ Lưu ý:
                     onClick={generateLuanGiai}
                     style={{
                       background:
-                        "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                        "linear-gradient(135deg, #d71920 0%, #8b0613 100%)",
                       border: "none",
                       borderRadius: "25px",
                       padding: "12px 40px",
@@ -823,9 +820,9 @@ Lưu ý:
                       fontWeight: "600",
                       boxShadow: `
             0 0 10px rgba(255, 255, 255, 0.6),
-            0 0 25px rgba(120, 150, 255, 0.8),
-            0 0 50px rgb(120, 150, 255),
-            0 0 80px rgb(120, 150, 255)
+            0 0 25px rgba(255, 204, 51, 0.72),
+            0 0 50px rgba(255, 204, 51, 0.48),
+            0 0 80px rgba(255, 204, 51, 0.48)
           `,
                       color: "#fff",
                       textShadow: "0 0 10px rgba(255, 255, 255, 0.8)",
@@ -845,7 +842,7 @@ Lưu ý:
                       width: "3rem",
                       height: "3rem",
                       color: "#fff",
-                      filter: `drop-shadow(0 0 10px rgba(120, 150, 255, 0.8))`,
+                      filter: `drop-shadow(0 0 10px rgba(255, 204, 51, 0.72))`,
                     }}
                   >
                     <span className="visually-hidden">Đang phân tích...</span>
@@ -855,7 +852,7 @@ Lưu ý:
                       color: "#fff",
                       textShadow: `
           0 0 10px rgba(255, 255, 255, 0.6),
-          0 0 25px rgba(120, 150, 255, 0.8)
+          0 0 25px rgba(255, 204, 51, 0.72)
         `,
                     }}
                   >
@@ -898,14 +895,14 @@ Lưu ý:
                           key={i}
                           className="mt-4 mb-3"
                           style={{
-                            borderBottom: "2px solid rgba(120, 150, 255, 0.6)",
+                            borderBottom: "2px solid rgba(255, 204, 51, 0.6)",
                             paddingBottom: "8px",
                             fontWeight: "700",
                             color: "#fff",
                             textShadow: `
                               0 0 10px rgba(255, 255, 255, 0.6),
-                              0 0 25px rgba(120, 150, 255, 0.8),
-                              0 0 50px rgb(120, 150, 255)
+                              0 0 25px rgba(255, 204, 51, 0.72),
+                              0 0 50px rgba(255, 204, 51, 0.48)
                             `,
                           }}
                         >
@@ -924,8 +921,8 @@ Lưu ý:
                             color: "rgba(255, 255, 255, 0.9)",
                             textShadow: `
                               0 0 10px rgba(255, 255, 255, 0.6),
-                              0 0 25px rgba(120, 150, 255, 0.8),
-                              0 0 50px rgb(120, 150, 255)
+                              0 0 25px rgba(255, 204, 51, 0.72),
+                              0 0 50px rgba(255, 204, 51, 0.48)
                             `,
                           }}
                         >
@@ -939,9 +936,9 @@ Lưu ý:
                   <div
                     className="mt-4 p-3 rounded"
                     style={{
-                      background: "rgba(120, 150, 255, 0.1)",
-                      border: "1px solid rgba(120, 150, 255, 0.3)",
-                      boxShadow: "0 0 20px rgba(120, 150, 255, 0.2)",
+                      background: "rgba(255, 204, 51, 0.12)",
+                      border: "1px solid rgba(255, 204, 51, 0.32)",
+                      boxShadow: "0 0 20px rgba(215, 25, 32, 0.22)",
                     }}
                   >
                     <p

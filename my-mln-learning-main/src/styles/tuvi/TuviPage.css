@@ -6,6 +6,10 @@
   font-family: "Lexend", sans-serif;
   text-align: center;
   font-size: 15px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 204, 51, 0.22), transparent 34%),
+    linear-gradient(135deg, var(--hcm-red-deep), var(--hcm-red-dark));
 }
 
 .tuvi-container-wrapper canvas {
@@ -25,12 +29,12 @@
 }
 
 .tuvi-container-wrapper a {
-  color: #1874cd;
+  color: var(--hcm-gold);
   text-decoration: none;
 }
 
 .tuvi-container-wrapper a:hover {
-  color: #104e8b;
+  color: var(--hcm-gold-soft);
 }
 
 .tuvi-container-wrapper h1,
@@ -92,8 +96,8 @@
   position: absolute;
   top: 20px;
   left: 20px;
-  --c1: #23153c;
-  --c2: #2185d0;
+  --c1: var(--hcm-red-deep);
+  --c2: var(--hcm-gold);
   --size-letter: 24px;
   padding: 0.5em 1em;
   font-size: var(--size-letter);
@@ -159,7 +163,7 @@
 /* Masthead */
 
 .tuvi-container-wrapper .masthead {
-  padding: 4rem 1rem;
+  padding: 5.5rem 1rem 4rem;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.65);
   text-align: center;
@@ -364,9 +368,9 @@
 .tuvi-container-wrapper input:focus,
 .tuvi-container-wrapper select:focus {
   outline: none;
-  border-color: #2185d0;
+  border-color: var(--hcm-gold);
   background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 0 0 3px rgba(33, 133, 208, 0.2);
+  box-shadow: 0 0 0 3px rgba(255, 204, 51, 0.22);
 }
 
 /* Style cho options trong dropdown - ĐÂY LÀ PHẦN QUAN TRỌNG */
@@ -378,12 +382,12 @@
 
 /* Style khi hover option */
 .tuvi-container-wrapper select option:hover {
-  background-color: #2185d0;
+  background-color: var(--hcm-red);
 }
 
 /* Style cho option được chọn */
 .tuvi-container-wrapper select option:checked {
-  background-color: #2185d0;
+  background-color: var(--hcm-red);
 }
 
 .tuvi-container-wrapper input[type="checkbox"] {
@@ -391,7 +395,7 @@
   height: 20px;
   margin-left: 10px;
   cursor: pointer;
-  accent-color: #2185d0;
+  accent-color: var(--hcm-gold);
 }
 
 .tuvi-container-wrapper .grid .left {
@@ -497,7 +501,7 @@
 }
 
 .tuvi-container-wrapper input.primary:hover {
-  background-color: #1678c2;
+  background-color: var(--hcm-red-dark);
   color: #fff;
   text-shadow: none;
 }
@@ -509,7 +513,7 @@
 }
 
 .tuvi-container-wrapper input.primary {
-  background-color: #2185d0;
+  background-color: var(--hcm-red);
   color: #fff;
   text-shadow: none;
 }
@@ -766,7 +770,7 @@
   }
 
   .tuvi-container-wrapper .masthead {
-    padding: 2rem 0.5rem;
+    padding: 4.8rem 0.5rem 2rem;
   }
 
   .tuvi-container-wrapper .container-2 {

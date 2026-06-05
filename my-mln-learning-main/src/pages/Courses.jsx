@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { coursesData } from "../data/coursesData";
 import "../styles/courses/courses.css";
-import { Link } from "react-router-dom";
+import BackHomeButton from "../components/common/BackHomeButton";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
@@ -108,14 +108,10 @@ const Courses = () => {
     <div className="triet-hoc-wrapper container-fluid p-4">
       {/* Header */}
       <div
-        className="position-relative rounded-4 shadow-lg p-4 mb-4 text-center"
-        style={{ color: "#3626b2" }}
+        className="courses-hero position-relative rounded-4 shadow-lg p-4 mb-4 text-center"
       >
-        <Link to="/" className="back-home-btn">
-          <i className="bi bi-house-door-fill"></i>
-          <span className="back-text">Trang chủ</span>
-        </Link>
-        <h1 className="mb-2 fw-bold" style={{ color: "#3626b2" }}>
+        <BackHomeButton />
+        <h1 className="mb-2 fw-bold">
           <i className="bi bi-book"></i> Chuyên đề HCM202
         </h1>
         <p className="mb-0 fs-5">

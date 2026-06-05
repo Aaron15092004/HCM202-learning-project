@@ -213,11 +213,11 @@ const Footer = () => {
                             marginTop: "0px",
                             marginBottom: "30px",
                             "--mb2-social-space": "11px",
-                            "--mb2-social-color": "rgb(0, 180, 216)",
-                            "--mb2-social-borcolor": "rgb(0, 180, 216)",
+                            "--mb2-social-color": "rgb(215, 25, 32)",
+                            "--mb2-social-borcolor": "rgb(215, 25, 32)",
                             "--mb2-social-hcolor": "rgb(255, 255, 255)",
-                            "--mb2-social-hbgcolor": "rgb(0, 180, 216)",
-                            "--mb2-social-hborcolor": "rgb(0, 180, 216)",
+                            "--mb2-social-hbgcolor": "rgb(215, 25, 32)",
+                            "--mb2-social-hborcolor": "rgb(215, 25, 32)",
                           }}
                         >
                           <ul className="social-list">
