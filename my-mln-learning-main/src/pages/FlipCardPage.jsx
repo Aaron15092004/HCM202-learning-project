@@ -203,9 +203,10 @@ export default function FlipCardPage() {
             .find(".game-back")
             .css({
               "background-image": "url(" + imageUrl + ")",
-              "background-size": "cover",
+              "background-size": "contain",
               "background-position": "center",
               "background-repeat": "no-repeat",
+              "background-color": "#b5121b",
             })
             .attr("data-img", imageUrl);
 

@@ -23,11 +23,11 @@ Students can study and practice "Tu tuong Ho Chi Minh" through a coherent red-ye
 - ✓ Project identity shell uses HCM202 / "Tu tuong Ho Chi Minh" across metadata, primary home copy, footer, and route labels — Phase 1
 - ✓ Course data contains exactly seven editable HCM202 topic structures — Phase 2
 - ✓ Quiz data contains 70 HCM202 practice questions, 10 per topic/chapter — Phase 2
+- ✓ Primary images, logo/favicon/topic images, and active flip-card imagery use local HCM202 red-yellow assets — Phase 3
+- ✓ Flip-card data contains exactly 32 local HCM202 image paths compatible with the existing game — Phase 3
 
 ### Active
 
-- [ ] Replace flip-card image data with image entries sized and selected for the actual flip-card layout.
-- [ ] Replace `makdahome.png` and `thu-ha.png` with bright, red-yellow, glowing Ho Chi Minh imagery.
 - [ ] Convert the whole visual system to a Vietnamese red-yellow theme, including major pages, buttons, headings, backgrounds, and interaction states.
 - [ ] Synchronize back buttons across pages so navigation feels consistent.
 - [ ] Normalize typography and text sizing across pages so content is readable and visually consistent.
@@ -51,7 +51,8 @@ Students can study and practice "Tu tuong Ho Chi Minh" through a coherent red-ye
 - The desired visual direction is vivid red-yellow, Vietnamese-flag inspired, bright and glowing, especially for Ho Chi Minh imagery.
 - The old content and assets are not reliable for the new project; broad replacement is expected rather than small edits.
 - Phase 1 completed the HCM202 identity shell. `/tuvi` remains available as a route by user request, but it is not advertised from the home page primary navigation.
-- Phase 2 replaced active course and quiz data. Browser automation remains unavailable in this environment, but data checks, lint, build, and HTTP route checks passed.
+- Phase 2 replaced active course and quiz data.
+- Phase 3 replaced primary visual assets and flip-card image data. The in-app Browser tool was not callable in this turn, but Playwright CLI screenshots, data checks, lint, build, and HTTP route checks passed.
 
 ## Constraints
 
@@ -68,8 +69,8 @@ Students can study and practice "Tu tuong Ho Chi Minh" through a coherent red-ye
 |----------|-----------|---------|
 | Convert the existing app instead of rebuilding | The current routes, course page, quiz flow, and flip game already provide useful structure. | - Pending |
 | Use seven Ho Chi Minh Thought topics for v1 | User requested seven topics and accepts generated structure as editable scaffolding. | ✓ Good |
-| Replace all old course, quiz, and flip data | User stated old data is no longer usable. Course and quiz are replaced; flip remains Phase 3. | - Pending |
-| Use a bright red-yellow glowing visual style | User requested a vivid Vietnamese-color direction and radiant Ho Chi Minh imagery. | - Pending |
+| Replace all old course, quiz, and flip data | User stated old data is no longer usable. Course, quiz, and active flip data are replaced. | ✓ Good |
+| Use a bright red-yellow glowing visual style | User requested a vivid Vietnamese-color direction and radiant Ho Chi Minh imagery. Primary assets and flip page now use this direction; full system theme remains Phase 4. | ✓ Good |
 | Keep content static in data modules for v1 | Matches current architecture and keeps edits simple. | ✓ Good |
 | Retain `/tuvi` route while removing it from primary HCM202 navigation | User explicitly approved Phase 1 but requested the route not be deleted. | ✓ Good |
 
@@ -91,4 +92,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state.
 
 ---
-*Last updated: 2026-06-05 after Phase 2 completion*
+*Last updated: 2026-06-05 after Phase 3 completion*

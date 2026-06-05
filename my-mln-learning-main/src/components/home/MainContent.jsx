@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import demoCert from "../../assets/images/demo_certificates.png";
+import studyBadge from "../../assets/images/hcm202-study-badge.png";
 import makdahome from "../../assets/images/makdahome.png";
 import thuHa from "../../assets/images/thu-ha.png";
 import { Link } from "react-router-dom";
@@ -406,7 +406,7 @@ const MainContent = () => {
                                 >
                                   <img
                                     className="hero-img lazy"
-                                    src="https://lmsstyle.com/theme/new-learning/theme/image.php/mb2nl/theme/1768588523/lazy_placeholder_big"
+                                    src={makdahome}
                                     data-src={makdahome}
                                     alt=""
                                   />
@@ -477,8 +477,8 @@ const MainContent = () => {
                                       >
                                         <img
                                           className="lazy"
-                                          src="https://lmsstyle.com/theme/new-learning/theme/image.php/mb2nl/theme/1768588523/lazy_placeholder"
-                                          data-src="https://lmsstyle.com/theme/new-learning/pluginfile.php/1/local_mb2builder/images/demo_logos.png"
+                                          src={studyBadge}
+                                          data-src={studyBadge}
                                           alt=""
                                         />
                                       </div>
@@ -619,10 +619,10 @@ const MainContent = () => {
                                               <div className="box-allcontent">
                                                 <div className="box-image">
                                                   <img
-                                                    alt="Cloud playgrounds"
+                                                    alt="HCM202 quiz practice"
                                                     className="theme-boximg-img lazy"
-                                                    data-src="https://lmsstyle.com/theme/new-learning/pluginfile.php/1/local_mb2builder/images/cloud-playgrounds.jpg"
-                                                    src="https://lmsstyle.com/theme/new-learning/theme/image.php/mb2nl/theme/1768588523/lazy_placeholder"
+                                                    data-src={studyBadge}
+                                                    src={studyBadge}
                                                     style={{
                                                       maxWidth: "800px",
                                                     }}
@@ -671,7 +671,7 @@ const MainContent = () => {
                                               <div className="theme-boximg-color" />
                                               <div
                                                 className="theme-boximg-imgel lazy"
-                                                data-bg="../../pluginfile.php/1/local_mb2builder/images/cloud-playgrounds.jpg"
+                                                data-bg={studyBadge}
                                               >
                                                 <div
                                                   className="gradient-el gradient-left"
@@ -700,10 +700,10 @@ const MainContent = () => {
                                               <div className="box-allcontent">
                                                 <div className="box-image">
                                                   <img
-                                                    alt="Professional certificates"
+                                                    alt="HCM202 memory cards"
                                                     className="theme-boximg-img lazy"
-                                                    data-src="https://lmsstyle.com/theme/new-learning/pluginfile.php/1/local_mb2builder/images/professional-certificates.jpg"
-                                                    src="https://lmsstyle.com/theme/new-learning/theme/image.php/mb2nl/theme/1768588523/lazy_placeholder"
+                                                    data-src={thuHa}
+                                                    src={thuHa}
                                                     style={{
                                                       maxWidth: "800px",
                                                     }}
@@ -752,7 +752,7 @@ const MainContent = () => {
                                               <div className="theme-boximg-color" />
                                               <div
                                                 className="theme-boximg-imgel lazy"
-                                                data-bg="../../pluginfile.php/1/local_mb2builder/images/professional-certificates.jpg"
+                                                data-bg={thuHa}
                                               >
                                                 <div
                                                   className="gradient-el gradient-left"
@@ -816,7 +816,7 @@ const MainContent = () => {
                                             "--mb-pb-ba_tcolor":
                                               "rgb(                                                  36,                                                  32,                                                  39                                                )",
                                             backgroundImage:
-                                              'url("https://lmsstyle.com/theme/new-learning/theme/image.php/mb2nl/local_mb2builder/1722369476/sample-data/2024/07/bg_shape_yellow")',
+                                              `url("${studyBadge}")`,
                                             marginBottom: "30px",
                                             minHeight: "477px",
                                           }}
@@ -850,8 +850,8 @@ const MainContent = () => {
                                                 và dễ mở rộng ở các phase sau.
                                               </p>
                                               <img
-                                                alt="demo_certificates.png"
-                                                src={demoCert}
+                                                alt="HCM202 study badge"
+                                                src={studyBadge}
                                                 style={{
                                                   marginTop: "0.9rem",
                                                 }}
@@ -891,10 +891,10 @@ const MainContent = () => {
                                                 }}
                                               >
                                                 <img
-                                                  alt="Programming certifications to improve your job and career prospects"
+                                                  alt="Ho Chi Minh themed study artwork"
                                                   className="ba_img_img lazy"
                                                   data-src={thuHa}
-                                                  src="https://lmsstyle.com/theme/new-learning/theme/image.php/mb2nl/theme/1768588523/lazy_placeholder_big"
+                                                  src={thuHa}
                                                 />
                                               </div>
                                             </div>

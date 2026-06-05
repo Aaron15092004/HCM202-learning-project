@@ -27,16 +27,16 @@
 
 ### Flip Cards
 
-- [ ] **FLIP-01**: User can play the flip-card game with Ho Chi Minh themed image data rather than old/hotlinked Marxism-Leninism imagery.
-- [ ] **FLIP-02**: Flip-card images fit the card layout without awkward cropping, distortion, or inconsistent sizing.
-- [ ] **FLIP-03**: Flip-card data structure remains compatible with the existing jQuery/React game logic.
+- [x] **FLIP-01**: User can play the flip-card game with Ho Chi Minh themed image data rather than old/hotlinked Marxism-Leninism imagery.
+- [x] **FLIP-02**: Flip-card images fit the card layout without awkward cropping, distortion, or inconsistent sizing.
+- [x] **FLIP-03**: Flip-card data structure remains compatible with the existing jQuery/React game logic.
 
 ### Assets
 
-- [ ] **ASST-01**: Home image formerly represented by `makdahome.png` is replaced with bright red-yellow glowing Ho Chi Minh imagery.
-- [ ] **ASST-02**: `thu-ha.png` is replaced with appropriate Ho Chi Minh imagery.
-- [ ] **ASST-03**: Logos, favicon, public topic images, and visible image references no longer imply the old project or old teacher branding.
-- [ ] **ASST-04**: Replaced assets render correctly in desktop and mobile layouts.
+- [x] **ASST-01**: Home image formerly represented by `makdahome.png` is replaced with bright red-yellow glowing Ho Chi Minh imagery.
+- [x] **ASST-02**: `thu-ha.png` is replaced with appropriate Ho Chi Minh imagery.
+- [x] **ASST-03**: Logos, favicon, public topic images, and visible image references no longer imply the old project or old teacher branding.
+- [x] **ASST-04**: Replaced assets render correctly in desktop and mobile layouts.
 
 ### Theme And UI
 
@@ -95,13 +95,13 @@
 | QUIZ-02 | Phase 2 | Complete |
 | QUIZ-03 | Phase 2 | Complete |
 | QUIZ-04 | Phase 2 | Complete |
-| FLIP-01 | Phase 3 | Pending |
-| FLIP-02 | Phase 3 | Pending |
-| FLIP-03 | Phase 3 | Pending |
-| ASST-01 | Phase 3 | Pending |
-| ASST-02 | Phase 3 | Pending |
-| ASST-03 | Phase 3 | Pending |
-| ASST-04 | Phase 3 | Pending |
+| FLIP-01 | Phase 3 | Complete |
+| FLIP-02 | Phase 3 | Complete |
+| FLIP-03 | Phase 3 | Complete |
+| ASST-01 | Phase 3 | Complete |
+| ASST-02 | Phase 3 | Complete |
+| ASST-03 | Phase 3 | Complete |
+| ASST-04 | Phase 3 | Complete |
 | UI-01 | Phase 4 | Pending |
 | UI-02 | Phase 4 | Pending |
 | UI-03 | Phase 4 | Pending |
@@ -120,4 +120,4 @@
 
 ---
 *Requirements defined: 2026-06-05*
-*Last updated: 2026-06-05 after Phase 2 completion*
+*Last updated: 2026-06-05 after Phase 3 completion*
