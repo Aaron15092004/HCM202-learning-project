@@ -27,13 +27,6 @@ export class Sao {
   }
 
   anDacTinh(dacTinh) {
-    const dt = {
-      V: "vuongDia",
-      M: "mieuDia",
-      Đ: "dacDia",
-      B: "binhHoa",
-      H: "hamDia",
-    };
     this.saoDacTinh = dacTinh;
     return this;
   }

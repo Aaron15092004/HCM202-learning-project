@@ -173,14 +173,14 @@ export default function FlipCardPage() {
           obj = [];
 
         // Create and add shuffled cards to game
-        for (var i = 0; i < level; i++) {
+        for (let i = 0; i < level; i++) {
           obj.push(i);
         }
 
         var shu = shuffle($.merge(obj, obj)),
           cardSize = 100 / Math.sqrt(shu.length);
 
-        for (var i = 0; i < shu.length; i++) {
+        for (let i = 0; i < shu.length; i++) {
           var imageIndex = shu[i];
           var imageUrl = flipImages[imageIndex] || flipImages[0];
 
@@ -264,7 +264,7 @@ export default function FlipCardPage() {
           })
           .one(
             "webkitAnimationEnd oanimationend msAnimationEnd animationend",
-            function (e) {
+            function () {
               startScreen("fail");
             },
           );

@@ -1,6 +1,6 @@
 ---
 phase: 01-project-identity-conversion
-status: gaps_found
+status: human_needed
 verified: 2026-06-05
 source:
   - 01-01-PLAN.md
@@ -11,51 +11,53 @@ source:
 
 ## Status
 
-`gaps_found`
+`human_needed`
 
-Phase 1 implementation changes are committed, but automated verification could not complete because local dependencies could not be installed due to disk space exhaustion.
+Automated checks now pass enough to proceed to visual/manual UAT. The in-app Browser plugin could not initialize in this environment, so final route appearance needs human approval before marking the phase complete.
 
 ## Must-Haves Checked
 
 | # | Must-have | Status | Evidence |
 |---|-----------|--------|----------|
-| 1 | Browser title, package metadata, header/nav, home page, footer, and visible page headings use HCM202 / "Tu tuong Ho Chi Minh" identity. | Verified | Grep confirmed HCM202 / "Tu tuong Ho Chi Minh" / "Tư tưởng Hồ Chí Minh" matches in metadata, header, home, footer, courses, quiz, results, and flip pages. |
-| 2 | Primary visible app surfaces no longer show TAHA, old teacher names, Moodle demo branding, Marxism-Leninism course branding, or stale philosophy-project copy. | Verified for primary UI | Primary UI stale-string grep returned no matches across metadata, header, home, footer, route pages, and `App.jsx`. Deferred data and tu vi source still contain old terms by design for later phases. |
-| 3 | Home navigation labels guide users to HCM202 study topics, HCM202 quiz practice, and HCM202 flip-card review. | Verified by source inspection | Home CTAs now point to `/courses`, `/quiz`, and `/flip`; `/tuvi` link/card was removed from `MainContent.jsx`. |
-| 4 | The app still lints/builds or any pre-existing lint/build issues are documented with exact output. | Failed / blocked | `npm run lint` and `npm run build` could not run because dependencies are not installed; `npm install` failed with `ENOSPC: no space left on device`. |
+| 1 | Browser title, package metadata, header/nav, home page, footer, and visible page headings use HCM202 / "Tu tuong Ho Chi Minh" identity. | Verified by source/build | Grep confirmed HCM202 / "Tu tuong Ho Chi Minh" / "Tư tưởng Hồ Chí Minh" matches in metadata, header, home, footer, courses, quiz, results, and flip pages. |
+| 2 | Primary visible app surfaces no longer show TAHA, old teacher names, Moodle demo branding, Marxism-Leninism course branding, or stale philosophy-project copy. | Verified by source | Primary UI stale-string grep returned no matches across metadata, header, home, footer, route pages, and `App.jsx`. Deferred data and tu vi source still contain old terms by design for later phases. |
+| 3 | Home navigation labels guide users to HCM202 study topics, HCM202 quiz practice, and HCM202 flip-card review. | Verified by source/HTTP | Home CTAs point to `/courses`, `/quiz`, and `/flip`; `/tuvi` link/card was removed from `MainContent.jsx`; active routes return HTTP 200. |
+| 4 | The app still lints/builds or any pre-existing lint/build issues are documented with exact output. | Passed with warnings | Lint exits 0 with two hook dependency warnings; build exits 0. |
 
 ## Automated Checks
 
 ### Passed
 
-- `rg -n "TAHA|Triết học Mác|Mác - Lênin|Marx|Lenin|Nguyễn Thị Thu Hà|New Learning|Premium Moodle Theme|Tử Vi|tuvi|Bói" my-mln-learning-main/src/components/home/Header.jsx my-mln-learning-main/src/components/home/MainContent.jsx my-mln-learning-main/src/components/home/Footer.jsx my-mln-learning-main/src/pages/Courses.jsx my-mln-learning-main/src/pages/QuizPage.jsx my-mln-learning-main/src/pages/QuizResultsPage.jsx my-mln-learning-main/src/pages/FlipCardPage.jsx my-mln-learning-main/src/App.jsx my-mln-learning-main/index.html my-mln-learning-main/package.json`
-  - Result: no matches.
-- `rg -n '/tuvi|Tuvipage|Tử Vi|Bói' my-mln-learning-main/src/App.jsx my-mln-learning-main/src/components/home/MainContent.jsx`
-  - Result: no matches.
-- `rg -n 'hcm202-learning|HCM202 Learning - Tu tuong Ho Chi Minh|lang="vi"' my-mln-learning-main/package.json my-mln-learning-main/package-lock.json my-mln-learning-main/index.html`
-  - Result: expected matches found.
-- `Test-Path my-mln-learning-main/node_modules`
-  - Result: `False` after cleanup of the failed partial install.
-
-### Blocked
-
-- `npm --prefix my-mln-learning-main run lint`
-  - Initial result before install: `eslint` was not recognized.
-- `npm --prefix my-mln-learning-main run build`
-  - Initial result before install: `vite` was not recognized.
 - `npm install`
-  - Result: failed with repeated `ENOSPC: no space left on device` errors.
+  - Result: added dependencies successfully.
+- `npm --prefix my-mln-learning-main run lint`
+  - Result: exit 0.
+  - Warnings: `QuizPage.jsx` missing `handleSubmit` hook dependency; `Tuvipage.jsx` missing `GEMINI_API_KEY` hook dependency.
+- `npm --prefix my-mln-learning-main run build`
+  - Result: exit 0.
+  - Warnings: copied Moodle theme asset URLs remain unresolved at build time and will resolve at runtime if available; full asset/theme cleanup is later-phase work.
+- Primary stale-string grep:
+  - Result: no matches in metadata, header, home, footer, active route pages, or `App.jsx`.
+- HCM202 identity grep:
+  - Result: expected matches found in metadata, header, home, footer, courses, quiz, results, and flip pages.
+- HTTP route checks:
+  - `/` -> 200
+  - `/courses` -> 200
+  - `/quiz` -> 200
+  - `/flip` -> 200
 
-## Gaps
+### Human Verification Needed
 
-1. Free disk space on the drive containing `e:\Desktop\HCM202-project`.
-2. Run `npm install` in `my-mln-learning-main`.
-3. Re-run:
-   - `npm --prefix my-mln-learning-main run lint`
-   - `npm --prefix my-mln-learning-main run build`
-4. Perform manual browser checks for `/`, `/courses`, `/quiz`, `/quiz/results`, and `/flip`.
-5. Re-run verification before marking Phase 1 complete.
+The in-app Browser plugin failed to initialize with: `failed to write kernel assets: The system cannot find the path specified. (os error 3)`. Because of that, visual DOM/screenshot checks could not be completed automatically.
+
+## Human UAT Checklist
+
+1. Open `http://127.0.0.1:5173/`.
+2. Verify the browser title and home page show HCM202 / Tư tưởng Hồ Chí Minh identity.
+3. Verify home page has visible navigation/cards for chuyên đề, trắc nghiệm, and thẻ ghi nhớ.
+4. Verify no visible home card/link advertises tử vi.
+5. Open `/courses`, `/quiz`, `/quiz/results` through the quiz flow if possible, and `/flip`; verify visible labels use HCM202 wording.
 
 ## Conclusion
 
-Phase 1 code changes satisfy the source-level identity requirements, but the phase is not complete until dependency installation, lint, build, and manual route verification pass.
+Phase 1 source and automated verification are ready. Mark phase complete after human visual approval.
