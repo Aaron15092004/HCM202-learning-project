@@ -7,23 +7,23 @@
 
 ### Identity
 
-- [ ] **IDEN-01**: User sees HCM202 / "Tu tuong Ho Chi Minh" project identity in package metadata, browser title, navigation, home page, footer, and visible page headings.
-- [ ] **IDEN-02**: User does not see TAHA, old teacher names, Marxism-Leninism course branding, or stale philosophy-project copy in the converted learning experience.
-- [ ] **IDEN-03**: User can navigate the app through labels that match the HCM202 study purpose.
+- [x] **IDEN-01**: User sees HCM202 / "Tu tuong Ho Chi Minh" project identity in package metadata, browser title, navigation, home page, footer, and visible page headings.
+- [x] **IDEN-02**: User does not see TAHA, old teacher names, Marxism-Leninism course branding, or stale philosophy-project copy in the converted learning experience.
+- [x] **IDEN-03**: User can navigate the app through labels that match the HCM202 study purpose.
 
 ### Course Content
 
-- [ ] **CONT-01**: User can study seven Ho Chi Minh Thought topics from `coursesData`.
-- [ ] **CONT-02**: Each topic has a consistent structure with title, summary/quote, learning issues, and a mind-map/image field that can be edited later.
-- [ ] **CONT-03**: Existing old course data is fully replaced instead of partially mixed with the new subject.
-- [ ] **CONT-04**: Generated content remains easy to fact-edit by changing static data objects without touching page logic.
+- [x] **CONT-01**: User can study seven Ho Chi Minh Thought topics from `coursesData`.
+- [x] **CONT-02**: Each topic has a consistent structure with title, summary/quote, learning issues, and a mind-map/image field that can be edited later.
+- [x] **CONT-03**: Existing old course data is fully replaced instead of partially mixed with the new subject.
+- [x] **CONT-04**: Generated content remains easy to fact-edit by changing static data objects without touching page logic.
 
 ### Quiz
 
-- [ ] **QUIZ-01**: User can take a quiz using only Ho Chi Minh Thought questions.
-- [ ] **QUIZ-02**: Quiz questions cover the seven topic areas at a useful spread for practice.
-- [ ] **QUIZ-03**: User can complete a quiz session and see results without route/state regressions.
-- [ ] **QUIZ-04**: Existing old quiz data is fully removed from the active question set.
+- [x] **QUIZ-01**: User can take a quiz using only Ho Chi Minh Thought questions.
+- [x] **QUIZ-02**: Quiz questions cover the seven topic areas at a useful spread for practice.
+- [x] **QUIZ-03**: User can complete a quiz session and see results without route/state regressions.
+- [x] **QUIZ-04**: Existing old quiz data is fully removed from the active question set.
 
 ### Flip Cards
 
@@ -40,22 +40,22 @@
 
 ### Theme And UI
 
-- [ ] **UI-01**: The app uses a coherent red-yellow Vietnamese-inspired visual system across home, courses, quiz, quiz results, flip, and any retained standalone pages.
-- [ ] **UI-02**: Buttons, links, active states, cards, headings, and backgrounds use the new theme with readable contrast.
-- [ ] **UI-03**: Back buttons are synchronized across pages with consistent placement, wording/icon treatment, and hover/focus behavior.
-- [ ] **UI-04**: Fonts and text sizes are normalized so page content, buttons, cards, quiz options, and course text remain readable and do not overlap.
-- [ ] **UI-05**: Mobile and desktop layouts avoid text overflow and incoherent UI overlap after the content and theme migration.
+- [x] **UI-01**: The app uses a coherent red-yellow Vietnamese-inspired visual system across home, courses, quiz, quiz results, flip, and any retained standalone pages.
+- [x] **UI-02**: Buttons, links, active states, cards, headings, and backgrounds use the new theme with readable contrast.
+- [x] **UI-03**: Back buttons are synchronized across pages with consistent placement, wording/icon treatment, and hover/focus behavior.
+- [x] **UI-04**: Fonts and text sizes are normalized so page content, buttons, cards, quiz options, and course text remain readable and do not overlap.
+- [x] **UI-05**: Mobile and desktop layouts avoid text overflow and incoherent UI overlap after the content and theme migration.
 
 ### Route Scope
 
-- [ ] **ROUT-01**: The unrelated `/tuvi` feature is either hidden, removed, or clearly excluded from the HCM202 navigation surface.
-- [ ] **ROUT-02**: Active routes still build and navigate correctly after identity, data, and theme changes.
+- [x] **ROUT-01**: The unrelated `/tuvi` feature is either hidden, removed, or clearly excluded from the HCM202 navigation surface.
+- [x] **ROUT-02**: Active routes still build and navigate correctly after identity, data, and theme changes.
 
 ### Verification
 
-- [ ] **VERI-01**: `npm run lint` completes or known lint issues are documented.
-- [ ] **VERI-02**: `npm run build` completes successfully.
-- [ ] **VERI-03**: Manual browser verification covers home, courses, quiz, quiz results, flip-card game, and responsive checks.
+- [x] **VERI-01**: `npm run lint` completes or known lint issues are documented.
+- [x] **VERI-02**: `npm run build` completes successfully.
+- [x] **VERI-03**: Manual browser verification covers home, courses, quiz, quiz results, flip-card game, and responsive checks.
 
 ## v2 Requirements
 
@@ -84,9 +84,9 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| IDEN-01 | Phase 1 | Pending |
-| IDEN-02 | Phase 1 | Pending |
-| IDEN-03 | Phase 1 | Pending |
+| IDEN-01 | Phase 1 | Complete |
+| IDEN-02 | Phase 1 | Complete |
+| IDEN-03 | Phase 1 | Complete |
 | CONT-01 | Phase 2 | Complete |
 | CONT-02 | Phase 2 | Complete |
 | CONT-03 | Phase 2 | Complete |
@@ -102,16 +102,16 @@
 | ASST-02 | Phase 3 | Complete |
 | ASST-03 | Phase 3 | Complete |
 | ASST-04 | Phase 3 | Complete |
-| UI-01 | Phase 4 | Pending |
-| UI-02 | Phase 4 | Pending |
-| UI-03 | Phase 4 | Pending |
-| UI-04 | Phase 4 | Pending |
-| UI-05 | Phase 4 | Pending |
-| ROUT-01 | Phase 4 | Pending |
-| ROUT-02 | Phase 4 | Pending |
-| VERI-01 | Phase 4 | Pending |
-| VERI-02 | Phase 4 | Pending |
-| VERI-03 | Phase 4 | Pending |
+| UI-01 | Phase 4 | Complete |
+| UI-02 | Phase 4 | Complete |
+| UI-03 | Phase 4 | Complete |
+| UI-04 | Phase 4 | Complete |
+| UI-05 | Phase 4 | Complete |
+| ROUT-01 | Phase 4 | Complete |
+| ROUT-02 | Phase 4 | Complete |
+| VERI-01 | Phase 4 | Complete |
+| VERI-02 | Phase 4 | Complete |
+| VERI-03 | Phase 4 | Complete |
 
 **Coverage:**
 - v1 requirements: 28 total
@@ -120,4 +120,4 @@
 
 ---
 *Requirements defined: 2026-06-05*
-*Last updated: 2026-06-05 after Phase 3 completion*
+*Last updated: 2026-06-05 after Phase 4 completion*

@@ -25,13 +25,11 @@ Students can study and practice "Tu tuong Ho Chi Minh" through a coherent red-ye
 - ✓ Quiz data contains 70 HCM202 practice questions, 10 per topic/chapter — Phase 2
 - ✓ Primary images, logo/favicon/topic images, and active flip-card imagery use local HCM202 red-yellow assets — Phase 3
 - ✓ Flip-card data contains exactly 32 local HCM202 image paths compatible with the existing game — Phase 3
+- ✓ Shared red-yellow UI system, synchronized back buttons, route scope, and verification are complete — Phase 4
 
 ### Active
 
-- [ ] Convert the whole visual system to a Vietnamese red-yellow theme, including major pages, buttons, headings, backgrounds, and interaction states.
-- [ ] Synchronize back buttons across pages so navigation feels consistent.
-- [ ] Normalize typography and text sizing across pages so content is readable and visually consistent.
-- [ ] Initialize and use a new git history for the converted project.
+- [ ] Review final screenshots and make any subjective visual refinements desired before sharing.
 
 ### Out of Scope
 
@@ -53,6 +51,7 @@ Students can study and practice "Tu tuong Ho Chi Minh" through a coherent red-ye
 - Phase 1 completed the HCM202 identity shell. `/tuvi` remains available as a route by user request, but it is not advertised from the home page primary navigation.
 - Phase 2 replaced active course and quiz data.
 - Phase 3 replaced primary visual assets and flip-card image data. The in-app Browser tool was not callable in this turn, but Playwright CLI screenshots, data checks, lint, build, and HTTP route checks passed.
+- Phase 4 completed the v1 red-yellow UI polish, synchronized back buttons, route scope verification, and final lint/build/route/screenshot checks.
 
 ## Constraints
 
@@ -67,7 +66,7 @@ Students can study and practice "Tu tuong Ho Chi Minh" through a coherent red-ye
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Convert the existing app instead of rebuilding | The current routes, course page, quiz flow, and flip game already provide useful structure. | - Pending |
+| Convert the existing app instead of rebuilding | The current routes, course page, quiz flow, and flip game already provide useful structure. | ✓ Good |
 | Use seven Ho Chi Minh Thought topics for v1 | User requested seven topics and accepts generated structure as editable scaffolding. | ✓ Good |
 | Replace all old course, quiz, and flip data | User stated old data is no longer usable. Course, quiz, and active flip data are replaced. | ✓ Good |
 | Use a bright red-yellow glowing visual style | User requested a vivid Vietnamese-color direction and radiant Ho Chi Minh imagery. Primary assets and flip page now use this direction; full system theme remains Phase 4. | ✓ Good |
@@ -92,4 +91,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state.
 
 ---
-*Last updated: 2026-06-05 after Phase 3 completion*
+*Last updated: 2026-06-05 after Phase 4 completion*
