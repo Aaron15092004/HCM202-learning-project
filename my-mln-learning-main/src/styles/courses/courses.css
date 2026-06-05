@@ -1,0 +1,112 @@
+.triet-hoc-wrapper {
+  --primary-color: #00b4d8;
+  --secondary-color: #3626b2;
+}
+
+.back-home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 180, 216, 0.3);
+  z-index: 10;
+}
+
+.back-home-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 180, 216, 0.4);
+  color: white;
+}
+
+.back-home-btn i {
+  font-size: 18px;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+  .back-home-btn {
+    top: 15px;
+    left: 15px;
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .back-home-btn i {
+    font-size: 16px;
+  }
+
+  .back-text {
+    display: none; /* Ẩn chữ "Trang chủ" trên mobile */
+  }
+}
+
+@media (max-width: 576px) {
+  .back-home-btn {
+    top: 10px;
+    left: 10px;
+    padding: 8px 12px;
+  }
+
+  .back-home-btn i {
+    font-size: 20px;
+  }
+}
+
+.triet-hoc-wrapper .topic-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.triet-hoc-wrapper .topic-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+  box-shadow: 0 10px 25px rgba(0, 180, 216, 0.2);
+}
+
+.triet-hoc-wrapper .topic-card.active {
+  border-color: var(--primary-color);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 180, 216, 0.1) 0%,
+    rgba(54, 38, 178, 0.1) 100%
+  );
+}
+
+.triet-hoc-wrapper .quote-box {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 180, 216, 0.05),
+    rgba(54, 38, 178, 0.05)
+  );
+  border-left: 4px solid var(--primary-color);
+}
+
+.triet-hoc-wrapper .mindmap-box {
+  background: #f8f9fa;
+  border: 2px dashed var(--secondary-color);
+  min-height: 300px;
+}
+
+.triet-hoc-wrapper .question-item {
+  border-left: 4px solid var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.triet-hoc-wrapper .question-item:hover {
+  transform: translateX(5px);
+}
