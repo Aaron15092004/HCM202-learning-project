@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import QuizPage from "./pages/QuizPage";
 import QuizResultsPage from "./pages/QuizResultsPage";
 import FlipCardPage from "./pages/FlipCardPage";
+import TuviPage from "./pages/Tuvipage";
 import Courses from "./pages/Courses";
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
         </Route>
 
         <Route path="/flip" element={<FlipCardPage />} />
+
+        <Route path="/tuvi" element={<TuviPage />} />
 
         <Route path="/courses" element={<Courses />} />
 

@@ -20,10 +20,10 @@ Students can study and practice "Tu tuong Ho Chi Minh" through a coherent red-ye
 - ✓ Quiz flow can shuffle/filter questions, track answers/timer/progress, and show result navigation — existing
 - ✓ Flip-card page can run a memory-card style interaction using image data and local state — existing
 - ✓ Feature CSS files already separate home, courses, quiz, flip, and tu vi surfaces enough for targeted retheming — existing
+- ✓ Project identity shell uses HCM202 / "Tu tuong Ho Chi Minh" across metadata, primary home copy, footer, and route labels — Phase 1
 
 ### Active
 
-- [ ] Rename project identity from `my-mln-learning` / TAHA / old philosophy wording to HCM202 / "Tu tuong Ho Chi Minh" across package metadata, browser title, visible text, navigation, and footer.
 - [ ] Replace all course data with a seven-topic "Tu tuong Ho Chi Minh" structure that the user can later fact-edit if needed.
 - [ ] Replace all quiz data with new Ho Chi Minh Thought practice questions and remove all unusable old subject data.
 - [ ] Replace flip-card image data with image entries sized and selected for the actual flip-card layout.
@@ -31,7 +31,6 @@ Students can study and practice "Tu tuong Ho Chi Minh" through a coherent red-ye
 - [ ] Convert the whole visual system to a Vietnamese red-yellow theme, including major pages, buttons, headings, backgrounds, and interaction states.
 - [ ] Synchronize back buttons across pages so navigation feels consistent.
 - [ ] Normalize typography and text sizing across pages so content is readable and visually consistent.
-- [ ] Decide whether the unrelated `/tuvi` feature remains, is hidden, or is removed from the HCM202 experience.
 - [ ] Initialize and use a new git history for the converted project.
 
 ### Out of Scope
@@ -51,6 +50,7 @@ Students can study and practice "Tu tuong Ho Chi Minh" through a coherent red-ye
 - Important image surfaces include `my-mln-learning-main/src/assets/images/makdahome.png`, `my-mln-learning-main/src/assets/images/thu-ha.png`, logo assets, public topic images, and flip-card image assets/URLs.
 - The desired visual direction is vivid red-yellow, Vietnamese-flag inspired, bright and glowing, especially for Ho Chi Minh imagery.
 - The old content and assets are not reliable for the new project; broad replacement is expected rather than small edits.
+- Phase 1 completed the HCM202 identity shell. `/tuvi` remains available as a route by user request, but it is not advertised from the home page primary navigation.
 
 ## Constraints
 
@@ -70,6 +70,7 @@ Students can study and practice "Tu tuong Ho Chi Minh" through a coherent red-ye
 | Replace all old course, quiz, and flip data | User stated old data is no longer usable. | - Pending |
 | Use a bright red-yellow glowing visual style | User requested a vivid Vietnamese-color direction and radiant Ho Chi Minh imagery. | - Pending |
 | Keep content static in data modules for v1 | Matches current architecture and keeps edits simple. | - Pending |
+| Retain `/tuvi` route while removing it from primary HCM202 navigation | User explicitly approved Phase 1 but requested the route not be deleted. | ✓ Good |
 
 ## Evolution
 
@@ -89,4 +90,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state.
 
 ---
-*Last updated: 2026-06-05 after initialization*
+*Last updated: 2026-06-05 after Phase 1 completion*
