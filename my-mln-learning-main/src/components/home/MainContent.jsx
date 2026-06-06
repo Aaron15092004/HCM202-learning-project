@@ -16,9 +16,6 @@ const MainContent = () => {
 
   useEffect(() => {
     const initVanta = () => {
-      console.log("Window.VANTA:", window.VANTA); // Debug
-      console.log("vantaRef.current:", vantaRef.current); // Debug
-
       if (window.VANTA && window.VANTA.BIRDS && vantaRef.current) {
         try {
           vantaEffect.current = window.VANTA.BIRDS({
@@ -30,11 +27,16 @@ const MainContent = () => {
             minWidth: 200.0,
             scale: 1.0,
             scaleMobile: 1.0,
-            backgroundColor: 0x80633,
-            color1: 0xffea,
-            color2: 0x21e2ea,
+            backgroundColor: 0x7f0712,
+            color1: 0xffd54a,
+            color2: 0xd71920,
+            colorMode: "variance",
+            birdSize: 1.35,
+            wingSpan: 26.0,
+            separation: 42.0,
+            alignment: 38.0,
+            cohesion: 34.0,
           });
-          console.log("Vanta initialized:", vantaEffect.current); // Debug
         } catch (err) {
           console.error("Vanta error:", err);
         }
