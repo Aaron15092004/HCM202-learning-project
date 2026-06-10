@@ -318,7 +318,7 @@ const Footer = () => {
                             ["Chuyên đề", "/courses"],
                             ["Trắc nghiệm", "/quiz"],
                             ["Thẻ ghi nhớ", "/flip"],
-                            ["Tử vi", "/tuvi"],
+                            ["Game", "/game"],
                           ].map(([item, href], idx) => (
                             <li key={idx}>
                               <a className="llink" href={href}>

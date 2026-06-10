@@ -825,7 +825,7 @@ const MainContent = () => {
                                               <div className="box-allcontent">
                                                 <div className="box-image">
                                                   <img
-                                                    alt="Tu vi quick route badge"
+                                                    alt="Lưới lửa phòng không route badge"
                                                     className="theme-boximg-img lazy"
                                                     data-src={oldTuviBadge}
                                                     src={oldTuviBadge}
@@ -845,20 +845,20 @@ const MainContent = () => {
                                                           }}
                                                         >
                                                           <span className="box-title-text">
-                                                            Bói Tử Vi vui
+                                                            Lưới lửa phòng không
                                                           </span>
                                                         </h4>
                                                         <div className="box-desc">
-                                                          Mở lại trang tử vi như
-                                                          một khu vực riêng để
-                                                          xem lá số và luận giải
-                                                          tham khảo.
+                                                          Game phản xạ về phòng
+                                                          không và quyết thắng,
+                                                          cảm hứng từ tinh thần
+                                                          nhân dân.
                                                         </div>
                                                         <span className="theme-boximg-color" />
                                                         <div className="box-readmore">
                                                           <Link
                                                             className="boxlink mb2-pb-btn typeprimary sizenormal rounded-1 btnborder0 fwglobal"
-                                                            to="/tuvi"
+                                                            to="/game"
                                                             style={{
                                                               "--mb2-pb-btn-bgcolor":
                                                                 "rgb(255, 178, 0)",
@@ -870,7 +870,7 @@ const MainContent = () => {
                                                                 "rgb(255, 255, 255)",
                                                             }}
                                                           >
-                                                            Xem tử vi
+                                                            Vào chơi
                                                           </Link>
                                                         </div>
                                                       </div>

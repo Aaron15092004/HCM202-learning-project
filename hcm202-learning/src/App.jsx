@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import HomeLayout from "./layouts/HomeLayout";
 import QuizLayout from "./layouts/QuizLayout";
 import HomePage from "./pages/HomePage";
 import QuizPage from "./pages/QuizPage";
 import QuizResultsPage from "./pages/QuizResultsPage";
 import FlipCardPage from "./pages/FlipCardPage";
-import TuviPage from "./pages/Tuvipage";
+import GamePage from "./pages/GamePage";
 import Courses from "./pages/Courses";
 
 function App() {
@@ -26,7 +26,8 @@ function App() {
 
         <Route path="/flip" element={<FlipCardPage />} />
 
-        <Route path="/tuvi" element={<TuviPage />} />
+        <Route path="/game" element={<GamePage />} />
+        <Route path="/tuvi" element={<Navigate to="/game" replace />} />
 
         <Route path="/courses" element={<Courses />} />
 
